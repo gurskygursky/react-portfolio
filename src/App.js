@@ -1,11 +1,12 @@
-import './App.css';
+import style from './App.module.css';
+import {Header} from "./header/Header";
+import {About} from "./about/About";
 
-export function App() {
+export const App = () => {
     return (
-        <div className="App">
-            <h3>
-                REACT PORTFOLIO
-            </h3>
+        <div className={style.appContainer}>
+            <Header/>
+            <About/>
         </div>
     );
 }
